@@ -1,0 +1,38 @@
+/*
+* {
+	border-radius: 10px;
+}
+*/
+window {
+	font-size: 15px;
+	font-family: "JetBrains Mono Medium";
+	background-color: rgba(34, 34, 34, 1);
+}
+
+#entry {
+	padding: 0.30em;
+}
+#img {
+	margin-right: 0.30em;
+}
+#entry:selected {
+	background-color: #7445c4;
+	outline: none;
+	padding: 0.30em;
+}
+
+#input {
+	visibility: hidden;
+	background-color: rgba(34, 34, 34, 1);
+	padding: 0.30em;
+	border: none;
+        box-shadow: none;
+}
+
+#input > image.left {
+        -gtk-icon-transform:scaleX(0);
+}
+#input > image.right {
+	-gtk-icon-transform:scaleX(0);
+}
+
