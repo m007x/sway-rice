@@ -1,0 +1,35 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "native"
+[theme.overrides]
+seperator = "|"
+
+[icons]
+icons = "material-nf"
+
+[[block]]
+block = "focused_window"
+[block.format]
+full = " $title.str(max_w:50) |"
+short = " $title.str(max_w:25) |"
+
+[[block]]
+block = "net"
+format = " $icon {$ssid|$ip} "
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%a %b %d %Y') "
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%I:%M %p') "
